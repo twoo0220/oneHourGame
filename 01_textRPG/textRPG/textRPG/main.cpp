@@ -1,17 +1,12 @@
-#include <iostream>
-#include <string>
-
-// Display of battle
-void battle()
-{
-	// _getch();
-	std::string orderString;
-	std::cin >> orderString;
-}
+#pragma once
+#include "GameManager.h"
 
 int main()
 {
-	battle();
+	gameManager gm;
+	gm.Init();
+	gm.Battle();
+	gm.DrawBattleScreen();
 
 	return 0;
 }

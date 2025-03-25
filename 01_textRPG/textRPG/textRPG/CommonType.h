@@ -1,4 +1,6 @@
 #pragma once
+#include <iostream>
+#include <string>
 
 struct Character
 {
@@ -20,15 +22,4 @@ enum class CHARACTER_TYPE
 	CHARACTER_PLAYER,	// Player
 	CHARACTER_MONSTER,	// Monster
 	CHARACTER_MAX		// Character Type Max
-};
-
-Character monsters[static_cast<int>(MONSTER_TYPE::MONSTER_MAX)] =
-{
-	{ 15, 15, 15, 15, "용사" },	// Player
-};
-
-Character characters[static_cast<int>(CHARACTER_TYPE::CHARACTER_MAX)] =
-{
-	{ 15, 15, 15, 15, "슬라임" },	// Slime
-	{ 15, 15, 15, 15, "고블린" },	// Goblin
 };
