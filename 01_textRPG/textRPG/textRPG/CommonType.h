@@ -9,11 +9,14 @@ struct Character
 	int mp = 0;
 	int maxMp = 0;
 	char name[13]{}; // 12 + null character
+	char aa[256]{};
 };
 
 enum class MONSTER_TYPE
 {
 	MONSTER_PLAYER,		// Player
+	MONSTER_SLIME,		// Slime
+	MONSTER_GOBLIN,		// Goblin
 	MONSTER_MAX			// Monster Type Max
 };
 

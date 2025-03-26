@@ -1,8 +1,10 @@
-#include "GameManager.h"
+﻿#include "GameManager.h"
 
 Character g_monsters[static_cast<int>(MONSTER_TYPE::MONSTER_MAX)] =
 {
-	{ 15, 15, 15, 15, "���", },	// Player
+	{ 15, 15, 15, 15, "용사", },	// Player
+	{ 10, 10, 10, 10, "슬라임", "／・Д・＼\n""～～～～～" },	// Slime
+	{ 20, 20, 20, 20, "고블린", },	// Goblin
 };
 
 Character g_characters[static_cast<int>(CHARACTER_TYPE::CHARACTER_MAX)] =
